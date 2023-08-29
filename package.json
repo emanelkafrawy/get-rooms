@@ -1,0 +1,38 @@
+{
+  "name": "jeetroom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.ts",
+  "scripts": {
+    "start": "node dist/src/server.js",
+    "awesome": "nodemon src/server.ts",
+    "build": "rm -rf dist && tsc -p tsconfig.json",
+    "create-migrate": "tsc -p tsconfig.json && ts-node ./node_modules/typeorm/cli.js migration:create -n migration",
+    "gen-migrate": "ts-node ./node_modules/typeorm/cli.js migration:generate -n migration",
+    "run-migrate": "ts-node ./node_modules/typeorm/cli.js migration:run",
+    "revert-migrate": "ts-node ./node_modules/typeorm/cli.js migration:revert"
+  },
+  "author": "eman elkafrawy",
+  "license": "ISC",
+  "dependencies": {
+    "@types/body-parser": "^1.19.2",
+    "@types/config": "^3.3.0",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "@typescript-eslint/parser": "^6.4.0",
+    "body-parser": "^1.20.2",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.0",
+    "config": "^3.3.9",
+    "mysql": "^2.14.1",
+    "nodemon": "^3.0.1",
+    "reflect-metadata": "^0.1.13",
+    "routing-controllers": "^0.10.4",
+    "ts-node": "^10.9.1",
+    "typedi": "^0.10.0",
+    "typeorm": "^0.2.25",
+    "typescript": "^5.1.6"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.0"
+  }
+}
