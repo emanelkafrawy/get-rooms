@@ -54,7 +54,7 @@
  can order and limit by writing a query [optional]
     ``?sortDirection=ASC&sortAttribute=id&page=1&limit=10``
 
-- and for api number  **7** you can filter by 
+- and for api number  **7** you can filter by  {as query}
 
     `id`, `name`, `title`, `description`, `size`,`location`, `roomStatus`, `cityName`, `countryName`, `status`
 
